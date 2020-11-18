@@ -319,9 +319,46 @@ h6 {
 
 }
 
-#footer ul>li{
+
+.list li{
     padding: 0.8rem 0;
     font-size: 1.3rem;
     border-bottom: 1px dotted #555;
     width: 90%;
+}
+.list li a>i{
+    margin-left: 6px;
+}
+.list li a{
+    display: flex;
+    align-items: center;
+}
+#about .page-container{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 1.5rem;
+    margin: 2rem 0;
+}
+#about .page-container>*:first-child{
+    grid-row: 1/span 3;
+}
+.card img{
+    border-radius: 5px;
+}
+
+.meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-color);
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+.meta small {
+    font-size: 1.3rem;
+}
+.card p{
+    font-size: 1.3rem;
+    line-height: 1.8;
 }
